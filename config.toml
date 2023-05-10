@@ -14,9 +14,9 @@ relativeURLs = true
 
 # Enables search
 [outputs]
-  home = ["HTML", "RSS", "PRINT"]
-  section = ["HTML", "RSS", "PRINT"]
-  page = ["HTML", "RSS", "PRINT"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]
 
 
 # Default Re-Learn theme options
