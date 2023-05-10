@@ -14,7 +14,7 @@ relativeURLs = true
 
 # Enables search
 [outputs]
-  home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE", "PRINT"]
+  home = ["HTML", "RSS", "PRINT"]
   section = ["HTML", "RSS", "PRINT"]
   page = ["HTML", "RSS", "PRINT"]
 
