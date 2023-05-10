@@ -1,13 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'CSI Knowledge Base'
-# theme = "hugo-theme-relearn"
-
-# theme module import
-[module]
-[[module.imports]]
-  path = 'github.com/McShelby/hugo-theme-relearn'
-
+theme = "hugo-theme-relearn"
 
 # Enables locally-serving the website using the `file://` protocol
 relativeURLs = true
