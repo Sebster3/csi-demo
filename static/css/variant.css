@@ -23,7 +23,7 @@
     --INTERNAL-MAIN-TITLES-TEXT-font: var(--MAIN-TITLES-TEXT-font, var(--INTERNAL-MAIN-font));
 
     --INTERNAL-MAIN-TITLES-H1-font: var(--MAIN-TITLES-H1-font, "PT Sans", var(--INTERNAL-MAIN-font));
-    --INTERNAL-MAIN-TITLES-H2-font: var(--MAIN-TITLES-H2-font, var(--INTERNAL-MAIN-TITLES-TEXT-font));
+    --INTERNAL-MAIN-TITLES-H2-font: var(--MAIN-TITLES-H2-font, "PT Sans", var(--INTERNAL-MAIN-TITLES-TEXT-font));
     --INTERNAL-MAIN-TITLES-H3-font: var(--MAIN-TITLES-H3-font, var(--INTERNAL-MAIN-TITLES-H2-font));
     --INTERNAL-MAIN-TITLES-H4-font: var(--MAIN-TITLES-H4-font, var(--INTERNAL-MAIN-TITLES-H3-font));
     --INTERNAL-MAIN-TITLES-H5-font: var(--MAIN-TITLES-H5-font, var(--INTERNAL-MAIN-TITLES-H4-font));
@@ -142,6 +142,10 @@ a:hover,
 .searchbox {
     border-color: var(--INTERNAL-MENU-SEARCH-BORDER-color);
     background-color: var(--INTERNAL-MENU-SEARCH-BG-color);
+}
+
+#sidebar .topics a {
+    font-family: "PT Sans", var(--INTERNAL-MAIN-font);
 }
 
 #sidebar .searchbox > :first-child,
