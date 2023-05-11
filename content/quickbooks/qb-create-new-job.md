@@ -7,7 +7,7 @@ description = "Learn how to create a new Job in Quickbooks"
 This page under construction. Subject to change.
 {{% /notice %}}
 
-In QuickBooks, a **job record** is used to track billing for a piece of work that has, or will be, performed. The job record follows the billing progess from the first day on site to the final payment & release of lein rights. Therefore, it is important the information in the job record is as accurate as possible.
+In QuickBooks, a **job record** serves as a way to track income and expenses for a specific project or job. It allows us to assign different transactions, such as invoices, bills, and payments, to a specific job and then view the profitability of that job in reports. By using job records, we can easily see which jobs are the most profitable, which jobs are over budget, and which clients owe money, among other insights.
 
 ## What You'll Need
 
