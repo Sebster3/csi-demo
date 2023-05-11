@@ -8,7 +8,7 @@ relativeURLs = true
 
 # Enables search
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE"]
   section = ["HTML", "RSS"]
   page = ["HTML", "RSS"]
 
