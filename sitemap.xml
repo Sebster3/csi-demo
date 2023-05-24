@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/quickbooks/qb-getting-started/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/quickbooks/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/quickbooks/qb-create-new-customer/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/quickbooks/qb-create-new-job/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/billing-folder/billing-folder-structure/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/job-folder/job-folder-structure/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/tags/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/billing-folder/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.org/job-folder/index.html</loc>
+  </url>
+</urlset>

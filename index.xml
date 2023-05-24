@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on CSI Knowledge Base</title>
+    <link>http://example.org/index.html</link>
+    <description>Recent content in Home on CSI Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickbooks</title>
+      <link>http://example.org/quickbooks/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://example.org/quickbooks/index.html</guid>
+      <description>QuickBooks enables us to efficiently manage our finances, such as income, expenses, and cash flow, in a well-organized and centralized manner. With features like invoicing, bill payment, payroll, inventory tracking, and reporting, QuickBooks is a comprehensive tool that can help reduce errors and provide financial insights.
+In many cases, it is possible to make edits after an entry has been made, but care should be taken to avoid this.
+Getting StartedGet yourself up and running with Quickbooks</description>
+    </item>
+    <item>
+      <title>The Billing Folder</title>
+      <link>http://example.org/billing-folder/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://example.org/billing-folder/index.html</guid>
+      <description>The billing folder is the place where all job-related documents should be store, within their respective job folders.
+Get started on one of the following sections to learn more:
+Folder StructureDetailed breakdown of the billing folder&amp;#39;s contents</description>
+    </item>
+    <item>
+      <title>The Job Folder</title>
+      <link>http://example.org/job-folder/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://example.org/job-folder/index.html</guid>
+      <description>QuickBooks is where billing is handled and it’s important that all information be entered with as much accuracy as possible. In many cases, it is possible to make edits after an entry has been made, but care should be taken to avoid this.
+Get started on one of the following sections to learn more:
+Folder StructureDetailed breakdown of the job folder&amp;#39;s contents</description>
+    </item>
+  </channel>
+</rss>

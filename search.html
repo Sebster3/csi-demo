@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Relearn 5.12.6+tip">
+    <meta name="description" content="">
+    <title>Search - CSI Knowledge Base</title>
+    <link href="http://example.org/search.html" rel="canonical" type="text/html" title="Search - CSI Knowledge Base">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="./css/fontawesome-all.min.css?1684946138" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fontawesome-all.min.css?1684946138" rel="stylesheet"></noscript>
+    <link href="./css/nucleus.css?1684946138" rel="stylesheet">
+    <link href="./css/auto-complete.css?1684946138" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/auto-complete.css?1684946138" rel="stylesheet"></noscript>
+    <link href="./css/perfect-scrollbar.min.css?1684946138" rel="stylesheet">
+    <link href="./css/fonts.css?1684946138" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fonts.css?1684946138" rel="stylesheet"></noscript>
+    <link href="./css/theme.css?1684946138" rel="stylesheet">
+    <link href="./css/theme-light.css?1684946138" rel="stylesheet" id="variant-style">
+    <link href="./css/variant.css?1684946138" rel="stylesheet">
+    <link href="./css/print.css?1684946138" rel="stylesheet" media="print">
+    <link href="./css/ie.css?1684946138" rel="stylesheet">
+    <script src="./js/url.js?1684946138"></script>
+    <script src="./js/variant.js?1684946138"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="./index.search.js";
+      var root_url="./";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/example.org/';
+      window.variants && variants.init( [ 'light', 'dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support searchpage" data-url="./index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="./index.html" title="Home (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Home</span><meta itemprop="position" content="1"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable home" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+            <h1 id="search">Search</h1>
+
+            <form action="javascript:triggerSearch()">
+              <div class="searchform">
+                <label class="a11y-only" for="search-by-detail">Search</label>
+                <input data-search-input id="search-by-detail" class="search-by" name="search-by" type="search" placeholder="Search...">
+<span class="btn cstyle secondary">
+  <button type="submit">
+    <i class="fa-fw fas fa-search"></i> 
+    Search
+  </button>
+</span>
+              </div>
+            </form>
+            <div class="searchhint">
+            </div>
+            <hr>
+            <div id="searchresults">
+            </div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<style>
+    #logo svg,
+    #logo svg * {
+      color: #282828;
+      color: var(--MENU-SECTIONS-BG-color);
+       
+       
+    }
+    a#logo {
+      color: #282828;
+      color: var(--MENU-SECTIONS-BG-color);
+      font-size: 1.875rem;
+      font-weight: 600;
+      font-family: var(--INTERNAL-MAIN-TITLES-H1-font);
+       
+       
+       
+       
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    a#logo:hover {
+      color: #282828;
+      color: var(--MENU-SECTIONS-BG-color);
+    }
+    #logo svg {
+       
+       
+      width: 50.5%;
+      vertical-align: middle;
+
+    }
+    @media only all and (max-width: 60rem) {
+      a#logo {
+        font-size: 1.5625rem;
+         
+      }
+       
+    }
+    @media all and (-ms-high-contrast:none) {
+      /* IE11s understanding of positioning is weird at best */
+      a#logo {
+        margin-top: -3.625rem;
+      }
+      #logo svg {
+        margin-bottom: -3.875rem;
+        margin-left: -1.47rem;
+      }
+    }
+    @media only all and (-ms-high-contrast:none) and (max-width: 60rem) {
+      #logo svg {
+        margin-left: -1.47rem;
+      }
+    }
+  </style>
+  <a id="logo" href="./index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 64 33">
+        <ellipse cx="31.959" cy="31.463" rx="31.339" ry=".207" transform="matrix(1.02111 0 0 79.8188 -.633 -2494.8)"/>
+        <ellipse cx="31.959" cy="31.463" rx="31.339" ry=".207" style="fill:url(#a)" transform="matrix(.97096 0 0 72.7214 .97 -2271.5)"/>
+        <ellipse cx="31.959" cy="31.463" rx="31.339" ry=".207" transform="matrix(.94212 0 0 69.6352 1.891 -2174.4)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(.56648 0 0 .98614 10.621 -14.795)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(0 -.5721 .7534 0 9.432 19.912)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(0 -.5721 .18818 0 20.736 25.341)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(0 -.5721 .18818 0 33.736 25.276)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(0 -.5721 .10122 0 37.476 31.427)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(0 -.5721 .10122 0 22.346 31.427)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(-.49408 -.18243 .27909 -.77094 30.986 43.45)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(.49408 -.18243 -.27909 -.77094 35.327 43.45)"/>
+        <path d="M24 20h1v23h-1z" style="fill:#f4ef31" transform="matrix(.56648 0 0 .98614 27.95 -14.795)"/>
+        <path d="M31.114 27.709v4.165h-.346c-.26-1.087-.744-1.92-1.453-2.499a3.708 3.708 0 0 0-2.41-.869c-.751 0-1.439.216-2.065.647a3.784 3.784 0 0 0-1.374 1.693c-.372.892-.558 1.885-.558 2.977 0 1.076.136 2.055.408 2.938.271.883.697 1.551 1.276 2.003.579.452 1.329.678 2.251.678.756 0 1.448-.166 2.078-.497.629-.33 1.292-.9 1.989-1.71v1.037c-.673.703-1.375 1.213-2.105 1.529-.729.316-1.581.474-2.556.474-1.282 0-2.421-.257-3.416-.771a5.445 5.445 0 0 1-2.304-2.216 6.18 6.18 0 0 1-.811-3.075c0-1.146.3-2.233.899-3.261a6.337 6.337 0 0 1 2.428-2.392 6.58 6.58 0 0 1 3.248-.851c.845 0 1.737.183 2.676.549.544.213.889.319 1.037.319a.672.672 0 0 0 .492-.208c.139-.139.229-.359.27-.66h.346Z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.8098 0 0 1.00993 -1.703 -16.773)"/>
+        <path d="m40.631 27.709.098 4.005h-.364c-.171-1.004-.592-1.812-1.262-2.423-.671-.612-1.396-.917-2.176-.917-.603 0-1.08.161-1.431.483-.352.321-.527.692-.527 1.112 0 .265.062.502.186.709.171.277.446.552.824.824.278.195.919.54 1.923 1.037 1.406.691 2.354 1.344 2.844 1.958.485.614.727 1.317.727 2.109 0 1.004-.391 1.868-1.174 2.592-.783.724-1.777 1.086-2.982 1.086-.378 0-.736-.039-1.072-.116-.337-.076-.759-.221-1.267-.434-.284-.118-.517-.177-.701-.177-.153 0-.316.059-.487.177-.171.118-.31.298-.416.541h-.328v-4.537h.328c.259 1.276.76 2.249 1.502 2.919.741.671 1.54 1.006 2.397 1.006.661 0 1.189-.18 1.581-.54.393-.361.59-.78.59-1.259 0-.283-.076-.558-.226-.824a2.621 2.621 0 0 0-.687-.757c-.307-.24-.851-.551-1.631-.935-1.092-.538-1.878-.996-2.357-1.374a4.216 4.216 0 0 1-1.103-1.267 3.145 3.145 0 0 1-.385-1.542c0-.957.351-1.772 1.054-2.446.703-.673 1.589-1.01 2.659-1.01a4.5 4.5 0 0 1 1.134.142c.278.071.616.202 1.014.394.399.192.678.288.838.288a.47.47 0 0 0 .363-.142c.089-.094.172-.322.248-.682h.266Z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.91255 0 0 1.00993 -1.04 -16.773)"/>
+        <path d="M48.846 39.672V40h-6.283v-.328h.399c.348 0 .629-.062.842-.186a.81.81 0 0 0 .354-.425c.065-.142.098-.514.098-1.117V30.04c0-.615-.033-.999-.098-1.152-.065-.154-.196-.288-.394-.404-.198-.115-.465-.172-.802-.172h-.399v-.328h6.283v.328h-.399c-.348 0-.629.062-.842.186-.153.082-.274.224-.363.425-.065.142-.097.514-.097 1.117v7.904c0 .615.033.999.101 1.152.068.154.201.288.399.403.198.116.465.173.802.173h.399Z" style="fill:#fff;fill-rule:nonzero" transform="matrix(1 0 0 1.00993 .2 -16.308)"/>
+        <defs>
+            <linearGradient id="a" x1="0" x2="1" y1="0" y2="0" gradientTransform="matrix(62.677 0 0 .84516 .62 31.462)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color:#f4ef31;stop-opacity:1"/>
+                <stop offset=".26" style="stop-color:#413f0d;stop-opacity:1"/>
+                <stop offset=".5" style="stop-color:black;stop-opacity:1"/>
+                <stop offset=".74" style="stop-color:#413f0d;stop-opacity:1"/>
+                <stop offset="1" style="stop-color:#f4ef31;stop-opacity:1"/>
+            </linearGradient>
+        </defs>
+        </svg><br>  
+    Knowledge Base
+  </a>
+        </div>
+        <form action="./search.html" method="get"><div class="searchbox default-animation">
+          <button type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="./js/auto-complete.js?1684946138" defer></script>
+        <script src="./js/lunr/lunr.min.js?1684946138" defer></script>
+        <script src="./js/lunr/lunr.stemmer.support.min.js?1684946138" defer></script>
+        <script src="./js/lunr/lunr.multi.min.js?1684946138" defer></script>
+        <script src="./js/lunr/lunr.en.min.js?1684946138" defer></script>
+        <script src="./js/search.js?1684946138" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace collapsible-menu">
+          <li data-nav-id="/quickbooks/index.html" class=""><input type="checkbox" id="section-c05aac5f7254174f73d916544b8c05ec" aria-controls="subsections-c05aac5f7254174f73d916544b8c05ec"><label for="section-c05aac5f7254174f73d916544b8c05ec"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Quickbooks</span></label><a class="padding" href="./quickbooks/index.html">Quickbooks</a><ul id="subsections-c05aac5f7254174f73d916544b8c05ec" class="morespace collapsible-menu">
+          <li data-nav-id="/quickbooks/qb-getting-started/index.html" class=""><a class="padding" href="./quickbooks/qb-getting-started/index.html">Getting Started</a></li>
+          <li data-nav-id="/quickbooks/qb-create-new-customer/index.html" class=""><a class="padding" href="./quickbooks/qb-create-new-customer/index.html">Creating a New Customer</a></li>
+          <li data-nav-id="/quickbooks/qb-create-new-job/index.html" class=""><a class="padding" href="./quickbooks/qb-create-new-job/index.html">Creating a New Job</a></li></ul></li>
+          <li data-nav-id="/billing-folder/index.html" class=""><input type="checkbox" id="section-3dbbdc61dee3d7d02d872147366af3ef" aria-controls="subsections-3dbbdc61dee3d7d02d872147366af3ef"><label for="section-3dbbdc61dee3d7d02d872147366af3ef"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu The Billing Folder</span></label><a class="padding" href="./billing-folder/index.html">The Billing Folder</a><ul id="subsections-3dbbdc61dee3d7d02d872147366af3ef" class="morespace collapsible-menu">
+          <li data-nav-id="/billing-folder/billing-folder-structure/index.html" class=""><a class="padding" href="./billing-folder/billing-folder-structure/index.html">Folder Structure</a></li></ul></li>
+          <li data-nav-id="/job-folder/index.html" class=""><input type="checkbox" id="section-2d97d710210b8a1edb426ccb2bedf573" aria-controls="subsections-2d97d710210b8a1edb426ccb2bedf573"><label for="section-2d97d710210b8a1edb426ccb2bedf573"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu The Job Folder</span></label><a class="padding" href="./job-folder/index.html">The Job Folder</a><ul id="subsections-2d97d710210b8a1edb426ccb2bedf573" class="morespace collapsible-menu">
+          <li data-nav-id="/job-folder/job-folder-structure/index.html" class=""><a class="padding" href="./job-folder/job-folder-structure/index.html">Folder Structure</a></li></ul></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-lightbulb fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="light" value="light" selected>Light</option>
+                    <option id="dark" value="dark">Dark</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="./js/clipboard.min.js?1684946138" defer></script>
+    <script src="./js/perfect-scrollbar.min.js?1684946138" defer></script>
+    <script src="./js/theme.js?1684946138" defer></script>
+  </body>
+</html>
